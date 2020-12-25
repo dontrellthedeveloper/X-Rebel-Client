@@ -12,7 +12,7 @@ export const homeObjOne = {
     img: require('../assets/svg-1.svg'),
     alt: 'Image',
     start: ''
-};
+}
 
 export const homeObjTwo = {
     lightBg: true,
@@ -28,7 +28,7 @@ export const homeObjTwo = {
     img: require('../assets/profile3.jpg'),
     alt: 'Image',
     start: 'true'
-};
+}
 
 export const homeObjThree = {
     lightBg: false,
@@ -44,7 +44,7 @@ export const homeObjThree = {
     img: require('../assets/svg-3.svg'),
     alt: 'Image',
     start: ''
-};
+}
 
 export const homeObjFour = {
     lightBg: true,
@@ -60,4 +60,4 @@ export const homeObjFour = {
     img: require('../assets/svg-2.svg'),
     alt: 'Image',
     start: 'true'
-};
+}
