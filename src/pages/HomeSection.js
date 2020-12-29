@@ -28,21 +28,22 @@ const HomeSection = () => {
             <HomePage/>
 
             <ReactVideoPlayer/>
-            <Services/>
+            {/*<Services/>*/}
 
             <ProductBanner2/>
             <Jumbotron/>
-            <InfoSection {...homeObjThree}/>
             <ProductBanner/>
-            <InfoSection {...homeObjOne}/>
-            {/*
+            {/*<InfoSection {...homeObjThree}/>*/}
+
+            {/*<InfoSection {...homeObjOne}/>*/}
+
         <Slider/>
-        */}
-            <InfoSection {...homeObjTwo}/>
+
+            {/*<InfoSection {...homeObjTwo}/>*/}
 
 
         </>
     )
-}
+};
 
 export default HomeSection;
