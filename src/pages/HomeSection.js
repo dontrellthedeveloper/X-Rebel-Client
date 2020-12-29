@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
     homeObjOne,
@@ -19,10 +18,10 @@ import HomepageSlider from '../components/homepageslider/homepageslider.componen
 const HomeSection = () => {
     return (
         <>
-
-            <HomepageSlider/>
-
-
+            <InfoSection {...homeObjOne}/>
+            {/*
+        <HomepageSlider/>
+        */}
             <HomePage/>
 
             <ReactVideoPlayer/>
@@ -33,24 +32,6 @@ const HomeSection = () => {
 
 
             <InfoSection {...homeObjTwo}/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         </>
