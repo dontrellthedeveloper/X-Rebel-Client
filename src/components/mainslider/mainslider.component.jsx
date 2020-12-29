@@ -33,6 +33,7 @@ function MainSlider() {
     };
 
     // setTimeout(goRight, 10000);
+    // setTimeout(goRight, 10000);
 
 
 

@@ -28,6 +28,7 @@ function Slider() {
         (x ===  -100*(sliderArr.length-1))?setX(0) : setX(x-100);
     };
 
+    // setTimeout(goRight, 15000);
 
 
     return <div className='slider'>

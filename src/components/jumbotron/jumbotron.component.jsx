@@ -3,6 +3,8 @@ import React from 'react';
 import {Jumbotron as Jumbo, Container} from 'react-bootstrap';
 import styled from 'styled-components';
 import boatImage from '../../assets/boatImage.jpg';
+import {CoolButton} from "../../globalStyles";
+import {NavBtnLink} from "../Navbar/Navbar.elements";
 
 const Styles = styled.div`
   .jumbo {
@@ -32,8 +34,11 @@ export const Jumbotron = () => (
         <Jumbo fluid className='jumbo'>
             <div className='overlay'></div>
             <Container style={{textAlign: "center"}}>
-                <h1 style={{fontSize: "60px", fontWeight: "600", marginTop: "50px"}}>X-REBEL</h1>
+                <h1 style={{fontSize: "60px", fontWeight: "600", marginTop: "20px"}}>X-REBEL</h1>
                 <p style={{fontSize: "21px"}}>Shop Our Latest Fashion</p>
+                <CoolButton fontBig primary>
+                    SHOP NOW
+                </CoolButton>
             </Container>
         </Jumbo>
     </Styles>

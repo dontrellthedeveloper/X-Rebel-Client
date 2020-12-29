@@ -33,11 +33,11 @@ const InfoSection = ({
         <InfoSec lightBg={lightBg}>
             <Container>
                 <InfoRow imgStart={imgStart}>
-                    <InfoColumn>
+                    <InfoColumn style={{textAlign: "center"}}>
                         <TextWrapper>
                             <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
-                            <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                            <Subtitle style={{margin: "35px auto"}} lightTextDesc={lightTextDesc}>{description}</Subtitle>
                             <Link to='./'>
                                 <CoolButton big fontBig primary={primary}>
                                     {buttonLabel}
@@ -46,7 +46,7 @@ const InfoSection = ({
                         </TextWrapper>
                     </InfoColumn>
                     <InfoColumn>
-                        <ImgWrapper start={start}>
+                        <ImgWrapper style={{margin: "0 70px"}} start={start}>
                             <Img src={img} alt={alt}/>
                         </ImgWrapper>
                     </InfoColumn>
