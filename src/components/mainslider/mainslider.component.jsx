@@ -32,7 +32,7 @@ function MainSlider() {
         (x ===  -100*(sliderArr.length-1))?setX(0) : setX(x-100);
     };
 
-    // setTimeout(goRight, 10000);
+    setTimeout(goRight, 10000);
     // setTimeout(goRight, 10000);
 
 

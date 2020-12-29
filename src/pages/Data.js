@@ -12,7 +12,7 @@ export const homeObjOne = {
     img: require('../assets/svg-1.svg'),
     alt: 'Image',
     start: ''
-}
+};
 
 export const homeObjTwo = {
     lightBg: true,
