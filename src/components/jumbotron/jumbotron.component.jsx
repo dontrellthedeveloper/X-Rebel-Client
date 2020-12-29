@@ -31,9 +31,9 @@ export const Jumbotron = () => (
     <Styles>
         <Jumbo fluid className='jumbo'>
             <div className='overlay'></div>
-            <Container>
-                <h1>XOV Fashion</h1>
-                <p>Shop Our Latest Fashion</p>
+            <Container style={{textAlign: "center"}}>
+                <h1 style={{fontSize: "60px", fontWeight: "600", marginTop: "50px"}}>X-REBEL</h1>
+                <p style={{fontSize: "21px"}}>Shop Our Latest Fashion</p>
             </Container>
         </Jumbo>
     </Styles>

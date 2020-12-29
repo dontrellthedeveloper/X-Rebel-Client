@@ -24,22 +24,20 @@ const HomeSection = () => {
 
             <MainSlider/>
 
-            <HomePage/>
 
+            <HomePage/>
 
             <ReactVideoPlayer/>
             <Services/>
-            <ProductBanner/>
+
+            <ProductBanner2/>
             <Jumbotron/>
             <InfoSection {...homeObjThree}/>
-            <ProductBanner2/>
+            <ProductBanner/>
             <InfoSection {...homeObjOne}/>
             {/*
         <Slider/>
         */}
-
-
-
             <InfoSection {...homeObjTwo}/>
 
 
