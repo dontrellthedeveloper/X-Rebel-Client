@@ -3,7 +3,8 @@ import {
     homeObjOne,
     homeObjTwo,
     homeObjThree,
-    homeObjFour
+    homeObjFour,
+    homeObjFive
 } from './Data';
 import { InfoSection } from '../components/Utils';
 
@@ -27,7 +28,7 @@ const HomeSection = () => {
             <ProductBanner2/>
             <Jumbotron/>
             <ProductBanner/>
-            <InfoSection {...homeObjThree}/>
+            <InfoSection {...homeObjFive}/>
             <HomePage/>
             <Slider/>
             <ReactVideoPlayer/>
