@@ -8,6 +8,12 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: 'Source Sans Pro', san-sarif;
     }
+    
+    .form-control:focus {
+      border-color: inherit;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
 `;
 
 export const Container = styled.div`
