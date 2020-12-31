@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -16,9 +16,31 @@ import RegisterComplete from "./pages/auth/RegisterComplete";
 
 import ScrollToTop from './components/Utils/ScrollToTop';
 
+import { auth } from "./firebase";
+import { useDispatch } from "react-redux";
 
-class App extends Component {
-    render() {
+
+const App = () => {
+    const dispatch = useDispatch();
+
+    // to check firebase auth state
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged(async (user) => {
+            if (user) {
+                const idTokenResult = await user.getIdTokenResult();
+                console.log("user", user);
+                dispatch({
+                    type: "LOGGED_IN_USER",
+                    payload: {
+                        email: user.email,
+                        token: idTokenResult.token,
+                    },
+                });
+            }
+        });
+        // cleanup
+        return () => unsubscribe();
+    }, []);
         return (
             <React.Fragment>
                 <Router>
@@ -37,8 +59,8 @@ class App extends Component {
                 </Router>
             </React.Fragment>
         );
-    }
+    };
 
-}
+
 
 export default App;
