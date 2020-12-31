@@ -31,8 +31,8 @@ const HomeSection = () => {
             <InfoSection {...homeObjFive}/>
             <HomePage/>
             <Slider/>
-            <ReactVideoPlayer/>
-            {/*<Services/>*/}
+            {/*<ReactVideoPlayer/>*/}
+            <Services/>
 
 
 
