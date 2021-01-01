@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
 
 
-const Register = () => {
+const Register = ({history}) => {
     const [email, setEmail] = useState("");
 
     const { user } = useSelector((state) => ({ ...state }));
