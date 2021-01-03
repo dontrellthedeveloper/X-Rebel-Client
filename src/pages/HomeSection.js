@@ -18,11 +18,12 @@ import HomepageSlider from '../components/homepageslider/homepageslider.componen
 import MainSlider from '../components/mainslider/mainslider.component';
 import ProductBanner from '../components/productbanner/productbanner.component';
 import ProductBanner2 from '../components/productbanner/productbanner2.component';
+import Home from './Home';
 
 const HomeSection = () => {
     return (
         <>
-
+            <Home/>
             <MainSlider/>
 
             <ProductBanner2/>
